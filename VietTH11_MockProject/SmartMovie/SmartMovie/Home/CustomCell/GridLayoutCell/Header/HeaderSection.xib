@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderSection" id="gTV-IL-0wX" customClass="HeaderSection" customModule="SmartMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="81"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpM-PM-3VR">
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="81"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mye-pd-2uu">
+                                <rect key="frame" x="16" y="30" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5A-dW-YFC">
+                                <rect key="frame" x="298" y="23" width="77" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="See All"/>
+                                <connections>
+                                    <action selector="didTapSeeAllBtnInGrid:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lpJ-Iy-TNP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Mye-pd-2uu" firstAttribute="centerY" secondItem="TpM-PM-3VR" secondAttribute="centerY" id="COt-39-hVt"/>
+                            <constraint firstAttribute="trailing" secondItem="W5A-dW-YFC" secondAttribute="trailing" constant="16" id="mYi-3a-4dd"/>
+                            <constraint firstItem="W5A-dW-YFC" firstAttribute="centerY" secondItem="TpM-PM-3VR" secondAttribute="centerY" id="omk-dR-CS7"/>
+                            <constraint firstItem="Mye-pd-2uu" firstAttribute="leading" secondItem="TpM-PM-3VR" secondAttribute="leading" constant="16" id="teh-kF-nrg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TpM-PM-3VR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3VN-uA-Iki"/>
+                <constraint firstAttribute="bottom" secondItem="TpM-PM-3VR" secondAttribute="bottom" id="3zz-b9-hp4"/>
+                <constraint firstItem="TpM-PM-3VR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eaD-HA-KqK"/>
+                <constraint firstAttribute="trailing" secondItem="TpM-PM-3VR" secondAttribute="trailing" id="zsL-MY-Qyg"/>
+            </constraints>
+            <size key="customSize" width="391" height="81"/>
+            <connections>
+                <outlet property="sectionTitle" destination="Mye-pd-2uu" id="hk0-wm-lBv"/>
+                <outlet property="seeAllBtn" destination="W5A-dW-YFC" id="K5a-YO-OQL"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="-13"/>
+        </collectionViewCell>
+    </objects>
+</document>
